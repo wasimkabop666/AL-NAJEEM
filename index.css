@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+	scroll-behavior: smooth; /* in order make smoother while scrolling(this is written while designing image of about us page) */
+}
+
+.btn{
+	margin: 0px;
+	padding: 0px;
+	color: white;
+	font-size: 90px;
+	text-align: center;
+	position: absolute;
+	top: 68%;
+	left: 49%;
+	transform: translateX(-50%) translateY(-50%);
+
+}
+.head{
+	text-align: center;
+	color: white;
+	font-weight: 300;
+}
+body{
+	min-height: 1000px;
+}
+
+.banner{
+	min-height: 100vh;
+	width: 100%;
+	background-image:
+  /*two color gradient over an image*/
+linear-gradient(rgba(4,9,30, 0.7), 
+rgba(4,9,30, 0.7)),url(images/photo1.jpg);
+ 
+ display: flex;
+ justify-content: center;
+ align-items: center;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+.middletext{
+    text-align: center;
+    color: #fff;
+}
+
+.banner.content{
+	max-width: 900px;
+	text-align: center;
+}
+.banner .content h2{
+	font-size: 5em;
+	color: #fff;
+	text-align: center;
+}
+.banner .content p{
+	font-size: 1em;
+	color:#fff;
+}
+.btn{
+	font-size: 1em;
+	color: #fff;
+	background: #ff0157;
+	display: inline-block;
+	padding: 10px 15px;
+	margin-top:20px;
+	text-transform: uppercase;
+	text-decoration:none;
+	letter-spacing: 2px;
+	transition: 0.5s;
+
+}
+.btn:hover{
+	letter-spacing: 6px;
+}
+header{
+	position: fixed;
+	top:0;
+	left: 0;
+	width:100%;
+	padding: 40px 100px;
+	z-index: 10000;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.5s;
+}
+header.sticky{
+	background: #fff;
+	padding: 10px 100px;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+header.sticky .logo{
+	color: #111;
+}
+header .logo{
+	color: #fff;
+	font-weight: 700;
+	font-size: 2em;
+	text-decoration: none;
+}
+header .navigation{
+	position: relative;
+	display: flex;
+}
+header .navigation li{
+	list-style: none;
+	margin-left: 30px;
+}
+header .navigation li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+
+header.sticky .navigation li a{
+	color: #111;
+}
+
+header .navigation li a:hover{
+	color: #ff0157;
+}
+/* SECOND HALF ABOUT PAGE */
+
+
+
+section{
+  padding:100px;
+}
+.row{
+	position: relative; /* in order to move tesxt at left and image at right */
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.row .col50{
+	position: relative;
+	width: 48%;
+}
+.titletext{
+color: #111;      /* for about us text */
+font-size: 2em;
+font-weight: 300;
+}
+
+.titletext span{
+	color: #ff0157;    /* this for a in about us*/
+	font-weight: 700;
+	font-size: 1.5em;
+}
+
+.row .col50 .imgbx{
+	position: relative;
+	width: 100%;              
+	min-height: 400px;  /* this lines decides the height of the page(check it varying the numbers) */
+}
+ .row .col50 .imgbx img{
+ 	position: absolute; /*this line only shrinks the image correctly (if wanted check it with relative) */
+ 	top: 0;
+ 	left: 0;
+ 	width: 100%;
+ 	height: 100%;
+}
+
+
+
+.row .col50 .imgbx{
+	position: relative;
+	width: 100%;              
+	min-height: 400px;  /* this lines decides the height of the page(check it varying the numbers) */
+}
+ .row .col50 .imgbx img{
+ 	position: absolute; /*this line only shrinks the image correctly (if wanted check it with relative) */
+ 	top: 0;
+ 	left: 0;
+ 	width: 100%;
+ 	height: 100%;
+}
+
+.title .button{
+	font-size: 1em;
+	color: #fff;
+	background: #ff0157;    /*In this block only i gave my order now button styling by changing class name because when i give only btn it changes to our menu to order now */
+	display: inline-block;
+	padding: 10px 15px;
+	margin-top:20px;
+	text-transform: uppercase;
+	text-decoration:none;
+	letter-spacing: 2px;
+	transition: 0.5s;
+}
+
+.title .button:hover{
+	letter-spacing: 6px;
+}
+
+
+/* testimonials */
+
+.title{
+	width:100%;
+	display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.testimonials{
+	background:url(images/bg.jpg);
+	background-size:cover; 
+}
+
+.white .titletext,.white p{
+	color:#fff;
+}
+
+.testimonials .content{
+	display: flex;                 /* this were you make the entire content div into center. play through this if you want clarity  */
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin-top: 40px;
+
+}
+
+
+.testimonials .content .box{
+	width: 340px;
+	margin:20px;                
+	padding: 40px;            /* this is were we create that 3 white boxes for chat  */
+	background:#fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.testimonials .content .box .imgbx{
+	position: relative;
+	width:80px;                /* this were that three boxes become compact and small like appearing. upto overflow hidden there is no change
+	(until this the box was so long and image was covering full screen after overhidden box become correct in shape but image was not able to see)so in
+	oredr to make image visible code typed imgbx */
+	height: 80px;
+	margin-bottom: 20px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.testimonials .content .box .imgbx img{
+	position: absolute;
+	top: 0;
+	left: 0;                    /* here only image come again--with small rounded image(when we type height itself it camed--but object fit i cant see variation) */
+	width: 100%;
+	height: 100%;
+    object-fit: cover;
+}
+
+.testimonials .content .box .text{
+	text-align: center;
+}
+
+.testimonials .content .box .text p{
+	color: #666;
+	font-style: italic;
+}
+
+.testimonials .content .box .text h3{
+	margin-top: 20px;
+	color: #111;
+	font-size: 1em;
+	color: #ff0157;
+	font-weight: 600;
+}
+------------
+
+/* CONTACT PAGE*/
+
+.contact{
+	background:url(images/photo7.jpg);
+	background-size: cover;
+}
+
+.contactform{
+	padding: 75px 50px;     /* this for entire contact box */
+	background: #fff;
+	box-shadow: 0px 15px 50px rgba(0,0,0,0.1);
+	max-width: 500px;
+	margin-top: 50px;
+}
+
+.contactform h3{
+	color: #111;            /* this for send meesage text */
+	font-size: 1.2em;       
+	margin-bottom: 20px;
+	font-weight: 500;
+}
+
+.contactform .inputbox{
+	position: relative;
+	width:100%;            /* this input boxes */
+	margin-bottom: 20px;
+}
+
+.contactform .inputbox input,.contactform .inputbox textarea{
+	width: 100%;
+	border:1px solid #555;
+	padding: 10px;         /* here only the box becomes big and text become bigs.in these border is imp** */
+	color: #111;
+	outline: none;      /* this is same for textarea also but rezize property is extra added*/
+	font-size: 16px;
+	font-weight: 300;
+	resize: none;
+}
+
+.contactform .inputbox input[type="submit"]{  /* This is for submit button  */
+	font-size: 1em;
+	color: #fff;                
+	background: #ff0157;
+	display: inline-block;
+	text-transform: uppercase; /* this line changes the text into uppercase */ 
+	text-decoration: none;
+	letter-spacing: 2px; /* this is to give space between the letters */
+	transition: 0.5s;
+	max-width: 100px;  /* before it is applied send box was big in rectangular size,,after this only box became small */
+	font-weight: 500;
+	border: none;  /* this line is to remove black border lines in button  */
+	cursor: pointer; /*to make handy symbol cursor */
+
+}
+
+
+.copyrighttext{
+	padding: 8px 40px;
+	border-top: 1px solid rgba(0,0,0,0.1);
+	text-align: center;
+
+}
+
+.copyrighttext p{
+	color: #333;
+}
+.copyrighttext a{
+   color: #ff0157;
+   font-weight: 500;
+   text-decoration: none;
+}
+
+
+/* THIS IS TO MAKE WEBSITE RESPONSIVE TO MOBILE DEVICE ALSO */
+
+/*Tips: 1. when you are doing for mobile play with values in google develop console, how website looks when changes made(this is temporarily)
+ */
+
+@media(max-width: 991px){
+	header,
+	header.sticky
+	{
+		padding: 10px 20px;   /* before this when we shrink the website,contact will disappear earlier itself 
+		but after this it reduced to certain limit of shrinking */
+
+	}
+    
+    header .navigation{
+    	display: none;   /*this will disappear the navigation bar */
+    }
+
+    .menutoggle{
+    	position: relative;
+    	width: 40px;
+    	height: 40px;
+    	background: url(images/menu.png);  /* upto this it was a blamk white small box,the menu png was not there */
+    	background-size:30px; /* from this two property only png image came */
+    	background-repeat:no-repeat;
+    	background-position: center;
+    	cursor: pointer;
+    }
+
+    .btn{
+    	top: 80%;    /* this to make our menu button to center  */
+    	left:50%;
+    }
+
+    .menutoggle.active   /* be careful in giving classnames,even single space between class names will not work but not for
+    every class names */
+    {  
+    	background: url(images/close.png);
+    	background-size: 25px;
+    	background-repeat: no-repeat;
+    	background-position: center;
+    }
+    
+    header .navigation.active  /* here only we get big balnk white page of menu while clicking it */
+    {
+    	width: 100%;
+    	height: 100%;
+    	position: fixed;  /* this line were make menues to visible full otherwise it will display in header itself */
+    	top: 68px;   /* it was very blank(when it is zero) inorder to ake header visble while clicking menu button */
+    	left: 0;
+    	display: flex;
+    	justify-content: center;
+    	align-items: center;
+    	flex-direction: column;
+    	background: #fff;
+    }
+
+    header .navigation li{
+    	margin-left: 0;
+    }
+
+    header .navigation li a{
+    	text-decoration: none;
+    	color: #111;
+    	font-size: 1.6em;
+    }
+
+    section{
+    	padding: 20px;
+    }
+
+    .banner .contetnt h2{
+    	font-size: 3em;
+    	color: #fff;
+    }
+
+    .row{
+    	flex-direction: column;
+    }
+
+    .row .col50{
+    	position: relative;
+    	width: 100%;
+    }
+
+    .row .col50 .imgbx{
+    	height: 300px;
+    	margin-top: 20px;
+    }
+   
+    .title
+    {
+    	text-align: center;
+    }
+
+    .titletext
+    {
+    	font-size: 1.8em;
+    	line-height: 1.5em;
+        margin-bottom: 15px;
+        font-weight: 300;
+    }
+
+    .testimonials .content .box
+    {
+    	margin: 10px;
+    	padding: 20px;
+    }
+
+    .contactform
+    {
+       padding: 35px 40px;
+       margin-top: 20px;
+       margin-bottom: 30px;
+    }
+
+}
+
+@media(max-width: 480px)
+{
+	.banner .content h2
+	{
+        font-size: 2.2em;
+        color: #fff;
+	}
+}
+
+
+
+

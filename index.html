@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>AL-NAJEEM RESTAURANT</title>
+	<meta name="viewport" content="width=device-width  ,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    
+
+    <header>
+    	<a href="#" class="logo">AL-NAJEEM</a>
+        <div class="menutoggle" onclick="togglemenu();"></div>  <!-- this is to create a box for menu.png image && on
+        click refers to a function in javascript.so when it enu image is clicked particular operation will be performed -->
+    	<ul class="navigation">
+    		<li><a href="#banner" onclick="togglemenu();">HOME</a></li>
+    		<li><a href="#about"  onclick="togglemenu();">ABOUT</a></li>
+    		<li><a href="#menu" onclick="togglemenu();">MENU</a></li>
+    		<li><a href="#testimonials"  onclick="togglemenu();">TESTIMONIALS</a></li>
+    		<li><a href="#contact" onclick="togglemenu();">CONTACT</a></li>
+    	</ul>
+    </header>
+
+
+
+	<section class="banner" id="banner">
+	<div class="content">
+		<h2>EAT GOOD FEEL GOOD</h2>
+		<P class="head">
+			<p1>Tamilnadu's No.1 place to eat mandi rice with delicious taste that had never eaten up by you<br>
+		                  <div class="middletext">TRY ONCE! Taste remains longlasting in your tongue</div></p1></p>
+		<a href="#menu" class="btn">OUR MENU</a>
+	</div>
+    </section>
+
+
+
+    <section class="about" id="about">
+    	<div class="row">
+    		<div class="col50">
+    			<h2 class="titletext"><span>A</span>bout Us</h2>
+    			<p>
+    				AL-NAJEEM restaurant is a initiative of providing delicious mandi rice in chidambaram.It was started by Vajigullah.N in 2020.Our restaurant maintains a rating of 4.0 star out of 5.0 star in Zaaroz(An online food delivery company in chidambaram).It is an restaurant especially initiated to provide delicious mandi rice in chidambaram.We are the first one to provide mandi rice in chidambaram at minimal cost.
+    			</p>
+    		</div>
+    		<div class="col50">
+    			<div class="imgbx">
+    				<img src="images/photo3.jpg">
+    			</div>
+    			
+    		</div>
+    	</div>
+    </section>
+
+
+
+    <section class="menu" id="menu">
+    <div class="row">
+        <div class="col50">
+            <h2 class="titletext">Our <span>M</span>enu</h2>
+            <p>The main dish of our restaurant is mandi rice</p>
+         </div>
+         <div class="col50">
+        
+                <div class="imgbx">
+                    <img src="images/photo4.jpg">
+                </div>
+                <div class="text">
+                    <h3>Mandi Rice</h3>
+                </div>
+        
+            <div class="title">
+            <a href="https://play.google.com/store/apps/details?id=com.zaaroz.ordering" class="button">ORDER NOW</a>
+            </div>
+        </div>
+    </div>
+    </section>
+    
+
+
+
+
+
+    <section class="testimonials" id="testimonials">
+           <div class="title white">
+               <h2 class="titletext">They <span>S</span>aid about us</h2>
+               <p>customers are the judges of the restaurant</p>
+           </div>
+           <div class="content">
+              <div class="box"> 
+                <div class="imgbx">
+                    <img  src="images/photo5.jpg">
+                </div>
+                <div class="text">
+                    <p>The AL NAJEEM Restaurant is a wonderful experience for me.
+                    The mandi rice was so delecious in this restaurant.
+                    I will give a 4 out of 5 stars for this restaurnat</p>
+                    <h3>WASIM AKRAM</h3>
+                </div>
+              </div>
+
+               <div class="box"> 
+                <div class="imgbx">
+                    <img src="images/photo6.jpg">
+                </div>
+                <div class="text">
+                    <p>Excellent service by the AL NAJEEM Restaurant and the way,they approach the customer was good.
+                    The mandi rice was good enough and the taste is awsome in this restaurant.
+                    I will give a 4 out of 5 stars for this restaurant</p>
+                    <h3>A.SARMILA BANU</h3>
+                </div>
+              </div>
+
+               <div class="box"> 
+                <div class="imgbx">
+                    <img src="images/photo5.jpg">
+                </div>
+                <div class="text">
+                    <p>It is a newly builted restaurant and their service were good. 
+                    The mandi rice was good and this should be a must try one for this restaurant.
+                    I will give a 4.2 out of 5 stars for this restaurnat</p>
+                    <h3>ASIF UMAR ALI</h3>
+                </div>
+              </div>
+           </div>
+    </section>
+
+
+
+
+<section class="contact" id="contact">
+    <div class="title">
+        <h2 class="titletext"><span>C</span>ontact Us</h2>
+        
+    </div>
+    <div class="contactform">
+        <h3>Send Message</h3>
+        <div class="inputbox">
+            <input type="text" placeholder="Name">
+        </div>
+        <div class="inputbox">
+            <input type="text" placeholder="Email">
+        </div>
+        <div class="inputbox">
+            <textarea placeholder="Name"></textarea>
+        </div>
+        <div class="inputbox">
+            <input type="submit" value="Send">
+        </div>
+    </div>
+</section>
+
+
+
+<div class="copyrighttext">
+    <p>Copyright 2020 <a href="#">AL-NAJEEM</a> Resaurant. All Rights Reserved</p>
+</div>
+
+    
+
+
+    <script type="text/javascript">
+    	window.addEventListener('scroll',function(){
+    		// body...
+    		const header=document.querySelector('header');
+    		header.classList.toggle("sticky",window.scrollY > 0);
+    	});
+
+        function togglemenu(){
+            const menutoggle=document.querySelector('.menutoggle');
+            const navigation=document.querySelector('.navigation');
+            navigation.classList.toggle('active');
+            menutoggle.classList.toggle('active');
+           
+        }
+    </script>		
+</body>
+</html>
